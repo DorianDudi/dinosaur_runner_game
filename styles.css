@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    background-color: silver;
+}
+p {
+    color: black;
+    display: block;
+    margin: 0;
+}
+
+#controls_container {
+    text-align: center;
+    width: 600px;
+    height: 70px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#canvas_container, #restart_button {
+    text-align: center;
+    margin: auto;
+}
+
+canvas {
+    background-image: url("background_source.png");
+    background-position-y: 0px;
+}
