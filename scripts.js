@@ -85,7 +85,7 @@ function generateObstacles() {
 			groupMembersHeight[groupHeightLast].push(getRandomIntInclusive(1, 3));
 		}
 	} else {
-		obstacleGroupCount.push(1); // ////////////////////////////////////////////////////////////////////////////////////////////////   !!!group count for flying objects
+		obstacleGroupCount.push(1); // group count for flying obstacles
 	}
 }
 
