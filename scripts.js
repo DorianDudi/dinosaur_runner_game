@@ -112,7 +112,7 @@ class FlyingObstacle extends Obstacle {
 function moveBackground() { // moves background image right to left in increments of 10px
 	document.getElementById('game').style.backgroundPositionX = xPositionInPixelsBackground + "px";
 	if (xPositionInPixelsBackground == 0) {
-		xPositionInPixelsBackground = 1100;
+		xPositionInPixelsBackground = 1100; //reset to initial value
 	} else {
 		xPositionInPixelsBackground -= 10;
 	}
@@ -227,7 +227,7 @@ function jump() {
 	document.addEventListener('keyup', ()=>{shortJump = 1}); // if upArrow is released when character is at least 150px from canvas top edge a short jump is triggered 
 	jumpID = setInterval(() =>{
 		if (shortJump && upperLeftY >= shortJumpKeyReleaseLimitPx) {
-			jumpLimit = 95; 
+			jumpLimit = 95; // which is further away from the canvas top side than the initial value of 4px (line 226)
 			document.removeEventListener('keyup', ()=>{shortJump = 1});
 		}
 		let jumpIncrement;	 
